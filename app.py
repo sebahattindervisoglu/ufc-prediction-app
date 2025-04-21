@@ -139,7 +139,7 @@ if tahmin:
     st.success(f"🏆 Kazanan: {winner_name}")
 
     # Kazanma Olasılığı yazısında kazananın rengine göre ayarla
-    kazanma_color = "#FF0000" if winner_name == red_fighter else "#0000FF"
+    kazanma_color = "#FF0000" if winner_name == red_fighter else "#3399FF"
 
     st.markdown(f"""
     <div style="text-align: center; margin-top: 30px; font-size: 24px; color: {kazanma_color};">
@@ -160,7 +160,7 @@ if tahmin:
     with colM:
         st.markdown("<div style='text-align:center; font-size:50px;'>🆚</div>", unsafe_allow_html=True)
     with col8:
-        show_fighter_card(blue_fighter, "#0000FF", is_winner=(blue_fighter == winner_name))
+        show_fighter_card(blue_fighter, "#3399FF", is_winner=(blue_fighter == winner_name))
 
     # --- Dövüşçü Özeti ---
     col9, col10 = st.columns(2)
